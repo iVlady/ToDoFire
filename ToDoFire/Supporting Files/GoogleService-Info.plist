@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>946459568021-6hhkcbfevjhbnsqio99rts3f2rb0orup.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.946459568021-6hhkcbfevjhbnsqio99rts3f2rb0orup</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAthaiq1ot6k5hDWOrXiqfzXSECDaPFxyc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>946459568021</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.iVlad.ToDoFire</string>
+	<key>PROJECT_ID</key>
+	<string>todo-fire-21f9d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>todo-fire-21f9d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:946459568021:ios:54c1090006995dcdaff89c</string>
+</dict>
+</plist>

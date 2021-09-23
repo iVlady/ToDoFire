@@ -70,12 +70,16 @@ extension ViewController{
         logInButton.titleLabel?.text = "Log In"
         logInButton.titleLabel?.textColor = .white
         logInButton.titleLabel?.font = UIFont(name: "Rockwell", size: 23)
+        logInButton.clipsToBounds = true
+        logInButton.layer.cornerRadius = 10
     }
     
     func registerButtonSetup() {
         registerButton.titleLabel?.text = "Register"
         registerButton.titleLabel?.textColor = .white
         registerButton.titleLabel?.font = UIFont(name: "Rockwell", size: 23)
+        registerButton.clipsToBounds = true
+        registerButton.layer.cornerRadius = 10
     }
 }
 
