@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>946459568021-6hhkcbfevjhbnsqio99rts3f2rb0orup.apps.googleusercontent.com</string>
+	<string>1031594209652-ber7qajqvh53bo90ip1a8nsqv6p4p75d.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.946459568021-6hhkcbfevjhbnsqio99rts3f2rb0orup</string>
+	<string>com.googleusercontent.apps.1031594209652-ber7qajqvh53bo90ip1a8nsqv6p4p75d</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAthaiq1ot6k5hDWOrXiqfzXSECDaPFxyc</string>
+	<string>AIzaSyBokaE6zXEOTLmGGWX4QUfSxobuBDXbrwo</string>
 	<key>GCM_SENDER_ID</key>
-	<string>946459568021</string>
+	<string>1031594209652</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>org.iVlad.ToDoFire</string>
 	<key>PROJECT_ID</key>
-	<string>todo-fire-21f9d</string>
+	<string>todofire-5c1fa</string>
 	<key>STORAGE_BUCKET</key>
-	<string>todo-fire-21f9d.appspot.com</string>
+	<string>todofire-5c1fa.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:946459568021:ios:54c1090006995dcdaff89c</string>
+	<string>1:1031594209652:ios:72d73bb00416c8df9bfc21</string>
 </dict>
 </plist>
