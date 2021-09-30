@@ -84,7 +84,8 @@ class LogInViewController: UIViewController {
               let password = passwordTextField.text,
               email != "",
               password != ""
-        else { displayWarningLabel(withText: "Info is incorrect")
+        else {
+            displayWarningLabel(withText: "Info is incorrect")
             return }
         
         Auth.auth().createUser(withEmail: email, password: password) { user, error in
