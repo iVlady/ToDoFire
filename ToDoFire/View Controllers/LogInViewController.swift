@@ -8,8 +8,12 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import FirebaseDatabase
 
 class LogInViewController: UIViewController {
+    
+    private let segueId = "tasksSegue"
+    var ref: DatabaseReference!
 
     @IBOutlet weak var toDoFireLabel: UILabel!
     @IBOutlet weak var warnLabel: UILabel!
@@ -18,15 +22,16 @@ class LogInViewController: UIViewController {
     @IBOutlet weak var logInButton: UIButton!
     @IBOutlet weak var registerButton: UIButton!
     
-    private let segueId = "tasksSegue"
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ref = Database.database().reference(withPath: "users")
                 
         NotificationCenter.default.addObserver(self, selector: #selector(kdDidShow), name: UIResponder.keyboardDidShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(kdDidHide), name: UIResponder.keyboardDidHideNotification, object: nil)
         
         warnLabel.alpha = 0
+        
         Auth.auth().addStateDidChangeListener { [weak self] auth, user in
             if user != nil {
                 self?.performSegue(withIdentifier: (self?.segueId)!, sender: nil)
@@ -62,7 +67,8 @@ class LogInViewController: UIViewController {
               let password = passwordTextField.text,
               email != "",
               password != ""
-        else { displayWarningLabel(withText: "Info is incorrect")
+        else {
+            displayWarningLabel(withText: "Info is incorrect")
             return }
         
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] user, error in
@@ -88,18 +94,14 @@ class LogInViewController: UIViewController {
             displayWarningLabel(withText: "Info is incorrect")
             return }
         
-        Auth.auth().createUser(withEmail: email, password: password) { user, error in
-            if error == nil {
-                if user != nil {
-                    
-                } else {
-                    print("User is not created")
-                    }
-                }  else {
-                    print(error!.localizedDescription)
+        Auth.auth().createUser(withEmail: email, password: password) { [weak self] user, error in
+            guard error == nil, user != nil else {
+                print(error!.localizedDescription)
+                return
             }
+            let userRef = self?.ref.child((user?.user.uid)!)
+            userRef?.setValue(["email": user?.user.email])
         }
-        
     }
 }
 

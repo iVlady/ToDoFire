@@ -16,5 +16,6 @@ struct User {
         self.uid = user.uid
         self.email = user.email!
     }
-    
 }
+
+

@@ -13,7 +13,7 @@ struct Task {
     
     let title: String
     let userId: String
-    let ref: Firebase.DatabaseReference?
+    let ref: DatabaseReference?
     var completed: Bool = false
     
     init(title: String, userId: String) {
